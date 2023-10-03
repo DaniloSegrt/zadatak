@@ -1,0 +1,1 @@
+C:\Users\PC\Documents\GitHub\zadatak\sos-092023-task2-Igor09061976\target\debug\sos_092023_task2.exe: C:\Users\PC\Documents\GitHub\zadatak\sos-092023-task2-Igor09061976\src\main.rs C:\Users\PC\Documents\GitHub\zadatak\sos-092023-task2-Igor09061976\src\tests.rs

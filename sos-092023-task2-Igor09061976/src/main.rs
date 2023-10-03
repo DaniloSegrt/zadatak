@@ -100,11 +100,11 @@ impl Rectangle {
     }
     /// Set side a
     pub fn set_a(&mut self, a: &f64) -> Result<(), &'static str> {
-        if *a>= 0.0{
+        if *a >= 0.0 {
             self.a = *a;
             Ok(())
         } else {
-            Err("Rectangles sides be greater or equal to zero!" )
+            Err("Rectangle sides must be greater or equal to zero!")
         }
         // TODO Implement the setter method and set the field `a` of the Rectangle struct
         // Notice that the fields a and b of Rectangle struct are private and can be access only by Rectangles methods
@@ -115,11 +115,11 @@ impl Rectangle {
     }
     /// Set side b
     pub fn set_b(&mut self, b: &f64) -> Result<(), &'static str> {
-        if *b>=0.0 {
+        if *b >= 0.0 {
             self.b = *b;
             Ok(())
         } else {
-            Err("Rectangles sides must be greater or equal to zero!")
+            Err("Rectangle sides must be greater or equal to zero!")
         }
         // TODO Implement the setter method and set the field `b` of the Rectangle struct
         // Notice that the fields a and b of Rectangle struct are private and can be access only by Rectangles methods
@@ -176,7 +176,7 @@ impl Shape for Rectangle {
     }
     /// Computes Circumference of given Rectangle
     fn circumference(&self) -> f64 {
-        2.0 *(self.a + self.b)
+        2.0 * (self.a + self.b)
         // TODO Calculate the circumference of the rectangle.
 
         
@@ -184,11 +184,11 @@ impl Shape for Rectangle {
 }
 impl Shape for Circle {
     fn area(&self) -> f64 {
-        std::f64::consts::PI * self.r *self.r
+         self.r *self.r * std::f64::consts::PI 
         
     }
     fn circumference(&self) -> f64 {
-         std::f64::consts::PI * self.r + self.r
+         2.0 * self.r * std::f64::consts::PI 
     }
 }
 // TODO Implement the Shape trait and its methods for the Circle struct
